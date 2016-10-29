@@ -125,6 +125,10 @@ namespace Lab1
                             } else if ((nextchar >= 'a' && nextchar <= 'z') || (nextchar >= 'A' && nextchar <= 'Z')) {
                                 error(line);
                                 word = "";
+                                nextchar = getchar();
+                                while ((nextchar >= 'a' && nextchar <= 'z') || (nextchar >= 'A' && nextchar <= 'Z')|| (nextchar >= '0' && nextchar <= '9')) {
+                                    nextchar = getchar();
+                                }
                                 state = State.Normal;
                                 read(nextchar);
                             }else
@@ -144,6 +148,11 @@ namespace Lab1
                             {
                                 error(line);
                                 word = "";
+                                nextchar = getchar();
+                                while ((nextchar >= 'a' && nextchar <= 'z') || (nextchar >= 'A' && nextchar <= 'Z') || (nextchar >= '0' && nextchar <= '9'))
+                                {
+                                    nextchar = getchar();
+                                }
                                 state = State.Normal;
                                 read(nextchar);
                             }
