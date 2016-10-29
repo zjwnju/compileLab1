@@ -1,0 +1,12 @@
+int main(){
+int a=1;//a=1
+5a
+int b=2;/*b=2
+*/
+char c=a+b;
+6a
+a+=;
+b+=;
+$
+6a
+}
